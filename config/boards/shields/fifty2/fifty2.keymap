@@ -3,10 +3,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-define win       0
-define func      1
-define no_win    2
-define btfunc    3
+#define win       0
+#define func      1
+#define no_win    2
+#define btfunc    3
 
 / {
     keymap {
