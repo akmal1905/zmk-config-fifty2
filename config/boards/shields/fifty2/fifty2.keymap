@@ -3,33 +3,48 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+define win       0
+define func      1
+define no_win    2
+define btfunc    3
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        win {
             bindings = <
                 &kp ESC    &kp N1       &kp N2      &kp N3      &kp N4   &kp N5     &kp N6      &kp N7      &kp N8     &kp N9  	    &kp N0
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R    &kp T      &kp Y 	    &kp U       &kp I      &kp O   	    &kp P
                 &kp CAPS   &kp A  	    &kp S       &kp D       &kp F    &kp G      &kp H  	    &kp J       &kp K      &kp L   	    &kp BSPC
                 &kp LSHFT  &kp Z  	    &kp X       &kp C       &kp V    &kp B      &kp N       &kp M       &kp COMMA  &kp RSHFT 	&kp DEL
-                &kp LCTRL  &kp LWIN     &kp LALT  					     &kp SPACE 		        &kp RALT    &kp RCTRL  &mo 1 		&kp ENTER
+                &kp LCTRL  &kp LWIN     &kp LALT  					     &kp SPACE 		        &kp RALT    &kp RCTRL  &mo func		&kp ENTER
             >;
         };
 
-        lower {
+        func {
             bindings = <
                 &kp ESC    &kp F1       &kp F2      &kp F3	    &kp F4   &kp F5     &kp F6	   &kp F7      &kp F8      &kp F9  	    &kp F10
                 &kp GRAVE  &none        &kp UP      &none    	&none    &none      &none 	   &kp LBKT    &kp RBKT    &kp MINUS    &kp EQUAL
                 &kp CAPS   &kp LEFT     &kp DOWN    &kp RIGHT	&none    &none      &none      &none       &kp SEMI    &kp APOS   	&kp NUBS
                 &kp LSHFT  &none  	    &none       &none    	&none    &none      &none      &none       &kp DOT	   &kp FSLH 	&kp BSPC
-                &kp LCTRL  &kp LWIN     &kp LALT  				         &kp SPACE 		       &kp RALT    &mo 2       &trans   	&kp ENTER
+                &kp LCTRL  &tog no_win  &kp LALT  				         &kp SPACE 		       &kp RALT    &mo btfunc  &trans   	&kp ENTER
             >;
         };
 
-        flock {
+         no_win {
             bindings = <
-                &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_PRV &bt BT_NXT &bt BT_CLR &trans  &trans  
+                &kp ESC    &kp N1       &kp N2      &kp N3      &kp N4   &kp N5     &kp N6      &kp N7      &kp N8     &kp N9  	    &kp N0
+                &kp TAB    &kp Q        &kp W       &kp E       &kp R    &kp T      &kp Y 	    &kp U       &kp I      &kp O   	    &kp P
+                &kp CAPS   &kp A  	    &kp S       &kp D       &kp F    &kp G      &kp H  	    &kp J       &kp K      &kp L   	    &kp BSPC
+                &kp LSHFT  &kp Z  	    &kp X       &kp C       &kp V    &kp B      &kp N       &kp M       &kp COMMA  &kp RSHFT 	&kp DEL
+                &kp LCTRL  &none        &kp LALT  					     &kp SPACE 		        &kp RALT    &kp RCTRL  &mo func		&kp ENTER
+            >;
+        };
+
+        btfunc {
+            bindings = <
+                &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_PRV &bt BT_NXT &bt BT_CLR &trans  &trans  
                 &out OUT_TOG &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans
