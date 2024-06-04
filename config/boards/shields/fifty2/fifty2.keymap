@@ -29,7 +29,7 @@
                 &kp GRAVE  &none        &kp UP      &none    	&none    &none      &none 	   &kp LBKT    &kp RBKT    &kp MINUS    &kp EQUAL
                 &kp CAPS   &kp LEFT     &kp DOWN    &kp RIGHT	&none    &none      &none      &none       &kp SEMI    &kp APOS   	&kp NUBS
                 &kp LSHFT  &none  	    &none       &none    	&none    &none      &none      &none       &kp DOT	   &kp FSLH 	&kp BSPC
-                &kp LCTRL  &to no_win   &kp LALT  				         &kp SPACE 		       &kp RALT    &mo btfunc  &trans   	&kp ENTER
+                &kp LCTRL  &tog no_win   &kp LALT  				         &kp SPACE 		       &kp RALT    &mo btfunc  &trans   	&kp ENTER
             >;
         };
         
@@ -39,7 +39,7 @@
                 &kp GRAVE  &none        &kp UP      &none    	&none    &none      &none 	   &kp LBKT    &kp RBKT    &kp MINUS    &kp EQUAL
                 &kp CAPS   &kp LEFT     &kp DOWN    &kp RIGHT	&none    &none      &none      &none       &kp SEMI    &kp APOS   	&kp NUBS
                 &kp LSHFT  &none  	    &none       &none    	&none    &none      &none      &none       &kp DOT	   &kp FSLH 	&kp BSPC
-                &kp LCTRL  &to win      &kp LALT  				         &kp SPACE 		       &kp RALT    &mo btfunc  &trans   	&kp ENTER
+                &kp LCTRL  &tog win      &kp LALT  				         &kp SPACE 		       &kp RALT    &mo btfunc  &trans   	&kp ENTER
             >;
         };
 
