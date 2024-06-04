@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define win       0
-#define func      1
-#define func2     2
-#define no_win    3
+#define no_win    1
+#define func      2
+#define func2     3
 #define btfunc    4
 
 / {
@@ -20,6 +20,16 @@
                 &kp CAPS   &kp A  	    &kp S       &kp D       &kp F    &kp G      &kp H  	    &kp J       &kp K      &kp L   	    &kp BSPC
                 &kp LSHFT  &kp Z  	    &kp X       &kp C       &kp V    &kp B      &kp N       &kp M       &kp COMMA  &kp RSHFT 	&kp DEL
                 &kp LCTRL  &kp LWIN     &kp LALT  					     &kp SPACE 		        &kp RALT    &kp RCTRL  &mo func		&kp ENTER
+            >;
+        };
+        
+        no_win {
+            bindings = <
+                &kp ESC    &kp N1       &kp N2      &kp N3      &kp N4   &kp N5     &kp N6      &kp N7      &kp N8     &kp N9  	    &kp N0
+                &kp TAB    &kp Q        &kp W       &kp E       &kp R    &kp T      &kp Y 	    &kp U       &kp I      &kp O   	    &kp P
+                &kp CAPS   &kp A  	    &kp S       &kp D       &kp F    &kp G      &kp H  	    &kp J       &kp K      &kp L   	    &kp BSPC
+                &kp LSHFT  &kp Z  	    &kp X       &kp C       &kp V    &kp B      &kp N       &kp M       &kp COMMA  &kp RSHFT 	&kp DEL
+                &kp LCTRL  &none        &kp LALT  					     &kp SPACE 		        &kp RALT    &kp RCTRL  &mo func2	&kp ENTER
             >;
         };
 
@@ -43,15 +53,6 @@
             >;
         };
 
-        no_win {
-            bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp N3      &kp N4   &kp N5     &kp N6      &kp N7      &kp N8     &kp N9  	    &kp N0
-                &kp TAB    &kp Q        &kp W       &kp E       &kp R    &kp T      &kp Y 	    &kp U       &kp I      &kp O   	    &kp P
-                &kp CAPS   &kp A  	    &kp S       &kp D       &kp F    &kp G      &kp H  	    &kp J       &kp K      &kp L   	    &kp BSPC
-                &kp LSHFT  &kp Z  	    &kp X       &kp C       &kp V    &kp B      &kp N       &kp M       &kp COMMA  &kp RSHFT 	&kp DEL
-                &kp LCTRL  &none        &kp LALT  					     &kp SPACE 		        &kp RALT    &kp RCTRL  &mo func2	&kp ENTER
-            >;
-        };
 
         btfunc {
             bindings = <
