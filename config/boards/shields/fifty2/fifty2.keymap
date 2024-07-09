@@ -38,7 +38,7 @@
                 &kp ESC    &kp F1       &kp F2      &kp F3	    &kp F4   &kp F5     &kp F6	   &kp F7      &kp F8      &kp F9  	    &kp F10
                 &kp GRAVE  &none        &kp UP      &none    	&none    &none      &none 	   &kp LBKT    &kp RBKT    &kp MINUS    &kp EQUAL
                 &kp CAPS   &kp LEFT     &kp DOWN    &kp RIGHT	&none    &kp INS    &kp HOME   &kp END     &kp SEMI    &kp APOS   	&kp BSPC
-                &kp LSHFT  &none  	    &none       &none    	&none    &none      &none      &none       &kp DOT	   &kp FSLH 	&kp BSLH
+                &kp LSHFT  &kp F11  	&kp F12     &none    	&none    &none      &none      &none       &kp DOT	   &kp FSLH 	&kp BSLH
                 &kp LCTRL  &to no_win   &kp LALT  				         &kp SPACE 		       &kp RALT    &mo btfunc  &trans   	&kp ENTER
             >;
         };
@@ -48,7 +48,7 @@
                 &kp ESC    &kp F1       &kp F2      &kp F3	    &kp F4   &kp F5     &kp F6	   &kp F7      &kp F8      &kp F9  	    &kp F10
                 &kp GRAVE  &none        &kp UP      &none    	&none    &none      &none 	   &kp LBKT    &kp RBKT    &kp MINUS    &kp EQUAL
                 &kp CAPS   &kp LEFT     &kp DOWN    &kp RIGHT	&none    &kp INS    &kp HOME   &kp END     &kp SEMI    &kp APOS   	&kp BSPC
-                &kp LSHFT  &none  	    &none       &none    	&none    &none      &none      &none       &kp DOT	   &kp FSLH 	&kp BSLH
+                &kp LSHFT  &kp F11  	&kp F12     &none    	&none    &none      &none      &none       &kp DOT	   &kp FSLH 	&kp BSLH
                 &kp LCTRL  &to win      &kp LALT  				         &kp SPACE 		       &kp RALT    &mo btfunc  &trans   	&kp ENTER
             >;
         };
@@ -78,7 +78,7 @@
 [{y:1},"Esc","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","Back<br>Space"],
 ["~ <br>`","","UP","","","","","{\n[","}\n]","_\n-","+\n=","|\n\\"],
 [{w:1.25},"Caps","LEFT","DOWN","RIGHT","","Insert","Home","End",{a:4},":\n;","\"\n'",{w:1.75},"Enter"],
-[{w:1.75},"Shift",{a:7},"","","","","","","",{a:4},">\n.",{w:1.25},"?\n/",{ "c" : "#ff0000" },"Fn",{ "c" : "#ffffff" }],
+[{w:1.75},"Shift",{a:7},"F11","F12","","","","","",{a:4},">\n.",{w:1.25},"?\n/",{ "c" : "#ff0000" },"Fn",{ "c" : "#ffffff" }],
 [{w:1.25},"Ctrl","TOG<br>WIN","Alt",{a:7,w:6.25},"",{a:4,w:1.25},"Alt",{w:1.25},"BT<br>FUNC"],
 
 [{y:1,a:7},"",{a:4},"BT1","BT2","BT3","BT4","BT5","BT<br>PREV","BT<br>NEXT","BT<br>CLR","","",""],
